@@ -40,7 +40,12 @@
         <div class="row">
             {% for frame in frames %}
             <div class="col-{{frame.name}}">
-                <iframe src="{{frame.url}}" width="{{frame.width}}" height="{{frame.height}}" style="border:none;"></iframe>
+                <iframe id="{{frame.name}}"  src="{{frame.url}}" width="{{frame.width}}" style="border:none;"></iframe>
+		<script>
+		  height = "{{frame.height}}".replace("%","")
+                  height = screen.height / 100 * height;
+                  document.getElementById("{{frame.name}}").height= height;
+               </script>
             </div>
             {% endfor %}
         </div>
