@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+    
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+    
+                        .col-lago {width: 40%;}
+                        .col-terminal {width: 100%;}
+                
+            html {
+                font-family: "Lucida Sans", sans-serif;
+            }
+    
+            .header {
+                background-color: #9933cc;
+                color: #ffffff;
+                padding: 15px;
+            }
+        </style>
+    </head>  
+    <body>
+        <div class="header">
+            <h1>Demo - AgnosticL</h1>
+        </div>
+        <div class="row">
+                        <div class="col-lago">
+                <iframe src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg" width="40%" height="100%" style="border:none;"></iframe>
+            </div>
+                        <div class="col-terminal">
+                <iframe src="https://cocalc.com/projects/49c56a59-c16b-416b-b960-f1a436f8075c/files/Welcome%20to%20CoCalc.term?session=default" width="100%" height="50%" style="border:none;"></iframe>
+            </div>
+                    </div>
+    </body>
+</html>

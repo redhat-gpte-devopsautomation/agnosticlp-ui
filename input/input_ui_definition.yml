@@ -1,0 +1,11 @@
+frames: 
+  - name: lago
+    title: Logo
+    url: https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg
+    height: 100
+    width: 40%
+  - name: terminal
+    title: Terminal
+    url: https://cocalc.com/projects/49c56a59-c16b-416b-b960-f1a436f8075c/files/Welcome%20to%20CoCalc.term?session=default
+    height: 50%
+    width: 100

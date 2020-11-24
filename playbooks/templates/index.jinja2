@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+    
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+    
+            {% for frame in frames %}
+            .col-{{frame.name}} {width: {{frame.width}};}
+            {% endfor %}
+    
+            html {
+                font-family: "Lucida Sans", sans-serif;
+            }
+    
+            .header {
+                background-color: #9933cc;
+                color: #ffffff;
+                padding: 15px;
+            }
+        </style>
+    </head>  
+    <body>
+        <div class="header">
+            <h1>Demo - AgnosticL</h1>
+        </div>
+        <div class="row">
+            {% for frame in frames %}
+            <div class="col-{{frame.name}}">
+                <iframe src="{{frame.url}}" width="{{frame.width}}" height="{{frame.height}}" style="border:none;"></iframe>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
