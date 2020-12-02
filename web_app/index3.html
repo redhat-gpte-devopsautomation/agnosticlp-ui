@@ -18,8 +18,9 @@
                 padding: 15px;
             }
     
-                        .col-logo {width: 40%;}
-                        .col-terminal {width: 100%;}
+                        .col-logo {width: 20%;}
+                        .col-terminal {width: 80%;}
+                        .col-terminal2 {width: 100%;}
                 
             html {
                 font-family: "Lucida Sans", sans-serif;
@@ -38,19 +39,27 @@
         </div>
         <div class="row">
                         <div class="col-logo">
-                <iframe id="logo"  src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg" width="40%" style="border:none;"></iframe>
+                <iframe id="logo"  src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg" width="20%" style="border:none;"></iframe>
 		<script>
-		  height = "10".replace("%","")
+		  height = "30%".replace("%","")
                   height = screen.height / 100 * height;
                   document.getElementById("logo").height= height;
                </script>
             </div>
                         <div class="col-terminal">
-                <iframe id="terminal"  src="https://cocalc.com/projects/49c56a59-c16b-416b-b960-f1a436f8075c/files/Welcome%20to%20CoCalc.term?session=default" width="100%" style="border:none;"></iframe>
+                <iframe id="terminal"  src="http://localhost" width="80%" style="border:none;"></iframe>
+		<script>
+		  height = "40%".replace("%","")
+                  height = screen.height / 100 * height;
+                  document.getElementById("terminal").height= height;
+               </script>
+            </div>
+                        <div class="col-terminal2">
+                <iframe id="terminal2"  src="https://etherpad-gpte-etherpad.apps.shared-dev4.dev4.openshift.opentlc.com/" width="100%" style="border:none;"></iframe>
 		<script>
 		  height = "50%".replace("%","")
                   height = screen.height / 100 * height;
-                  document.getElementById("terminal").height= height;
+                  document.getElementById("terminal2").height= height;
                </script>
             </div>
                     </div>

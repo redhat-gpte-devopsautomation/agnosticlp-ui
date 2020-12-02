@@ -1,0 +1,16 @@
+frames:
+  - name: logo
+    title: Logo
+    url: https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg
+    height: 30%
+    width: 20%
+  - name: terminal
+    title: Terminal
+    url: http://localhost
+    height: 40%
+    width: 80%
+  - name: terminal2
+    title: Terminal2
+    url: https://etherpad-gpte-etherpad.apps.shared-dev4.dev4.openshift.opentlc.com/
+    height: 50%
+    width: 100%
