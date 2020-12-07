@@ -2,6 +2,10 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="This website will show generate lab environments">
+        <meta name="keywords" content="terminal, web, lab">
+        <title>AgnosticL</title>
         <style>
             * {
                 box-sizing: border-box;
@@ -33,26 +37,32 @@
         </style>
     </head>  
     <body>
+        <header>
         <div class="header">
-            <h1>Demo - AgnosticL</h1>
         </div>
+        </header>
+        <main>
+        <hr/>
         <div class="row">
-                        <div class="col-logo">
+                        <span class="col-logo">
                 <iframe id="logo"  src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg" width="40%" style="border:none;"></iframe>
 		<script>
 		  height = "10".replace("%","")
                   height = screen.height / 100 * height;
                   document.getElementById("logo").height= height;
                </script>
-            </div>
-                        <div class="col-terminal">
+            </span>
+                        <span class="col-terminal">
                 <iframe id="terminal"  src="https://cocalc.com/projects/49c56a59-c16b-416b-b960-f1a436f8075c/files/Welcome%20to%20CoCalc.term?session=default" width="100%" style="border:none;"></iframe>
 		<script>
 		  height = "50%".replace("%","")
                   height = screen.height / 100 * height;
                   document.getElementById("terminal").height= height;
                </script>
-            </div>
+            </span>
                     </div>
+        </main>
+        <footer>
+        /footer>
     </body>
 </html>

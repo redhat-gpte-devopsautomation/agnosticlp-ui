@@ -2,6 +2,10 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="This website will show generate lab environments">
+        <meta name="keywords" content="terminal, web, lab">
+        <title>AgnosticL</title>
         <style>
             * {
                 box-sizing: border-box;
@@ -18,9 +22,9 @@
                 padding: 15px;
             }
     
-                        .col-logo {width: 20%;}
-                        .col-terminal {width: 80%;}
-                        .col-terminal2 {width: 100%;}
+                        .col-logo {width: 100%;}
+                        .col-terminal {width: 30%;}
+                        .col-terminal2 {width: 70%;}
                 
             html {
                 font-family: "Lucida Sans", sans-serif;
@@ -34,34 +38,40 @@
         </style>
     </head>  
     <body>
+        <header>
         <div class="header">
-            <h1>Demo - AgnosticL</h1>
         </div>
+        </header>
+        <main>
+        <hr/>
         <div class="row">
-                        <div class="col-logo">
-                <iframe id="logo"  src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg" width="20%" style="border:none;"></iframe>
+                        <span class="col-logo">
+                <iframe id="logo"  src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg" width="100%" style="border:none;"></iframe>
 		<script>
-		  height = "30%".replace("%","")
+		  height = "20%".replace("%","")
                   height = screen.height / 100 * height;
                   document.getElementById("logo").height= height;
                </script>
-            </div>
-                        <div class="col-terminal">
-                <iframe id="terminal"  src="http://localhost" width="80%" style="border:none;"></iframe>
+            </span>
+                        <span class="col-terminal">
+                <iframe id="terminal"  src="http://localhost" width="100%" style="border:none;"></iframe>
 		<script>
-		  height = "40%".replace("%","")
+		  height = "80%".replace("%","")
                   height = screen.height / 100 * height;
                   document.getElementById("terminal").height= height;
                </script>
-            </div>
-                        <div class="col-terminal2">
+            </span>
+                        <span class="col-terminal2">
                 <iframe id="terminal2"  src="https://etherpad-gpte-etherpad.apps.shared-dev4.dev4.openshift.opentlc.com/" width="100%" style="border:none;"></iframe>
 		<script>
-		  height = "50%".replace("%","")
+		  height = "80%".replace("%","")
                   height = screen.height / 100 * height;
                   document.getElementById("terminal2").height= height;
                </script>
-            </div>
+            </span>
                     </div>
+        </main>
+        <footer>
+        </footer>
     </body>
 </html>
