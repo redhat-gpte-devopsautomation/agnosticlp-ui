@@ -24,10 +24,11 @@ All the playbook generated files in form of static html (index.html).
 
 == Steps to setup your environment
 
-*Pre-reqs:
+*Pre-reqs:*
+
 * Ansible installed
 
-
+*Installation:*
 
 . Download the source code from the repository
 git clone https://github.com/redhat-gpte-devopsautomation/agnosticlp-ui.git
