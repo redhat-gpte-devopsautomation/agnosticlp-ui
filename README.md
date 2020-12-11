@@ -1,4 +1,3 @@
-# agnosticlp-ui
 = Agnostic-LP User Interface
 
 == Definition
