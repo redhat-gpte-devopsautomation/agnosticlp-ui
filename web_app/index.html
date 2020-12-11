@@ -22,17 +22,14 @@
                 padding: 15px;
             }
     
-                        .col-logo {width: 40%;}
-                        .col-terminal {width: 100%;}
+                        .col-doc {width: 40%;}
+                        .col-terminal {width: 60%;}
                 
             html {
                 font-family: "Lucida Sans", sans-serif;
             }
     
             .header {
-                background-color: #9933cc;
-                color: #ffffff;
-                padding: 15px;
             }
         </style>
     </head>  
@@ -44,25 +41,25 @@
         <main>
         <hr/>
         <div class="row">
-                        <span class="col-logo">
-                <iframe id="logo"  src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo.svg" width="40%" style="border:none;"></iframe>
-		<script>
-		  height = "10".replace("%","")
-                  height = screen.height / 100 * height;
-                  document.getElementById("logo").height= height;
-               </script>
+                        <span class="col-doc">
+                <iframe id="doc"  src="http://localhost:81/agnosticlp-content/1/" width="100%" style="border:none;"></iframe>
+                <script>
+                height = "80%".replace("%","")
+                height = screen.height / 100 * height;
+                document.getElementById("doc").height= height;
+                </script>
             </span>
                         <span class="col-terminal">
-                <iframe id="terminal"  src="https://cocalc.com/projects/49c56a59-c16b-416b-b960-f1a436f8075c/files/Welcome%20to%20CoCalc.term?session=default" width="100%" style="border:none;"></iframe>
-		<script>
-		  height = "50%".replace("%","")
-                  height = screen.height / 100 * height;
-                  document.getElementById("terminal").height= height;
-               </script>
+                <iframe id="terminal"  src="http://localhost:10080" width="100%" style="border:none;"></iframe>
+                <script>
+                height = "80%".replace("%","")
+                height = screen.height / 100 * height;
+                document.getElementById("terminal").height= height;
+                </script>
             </span>
                     </div>
         </main>
         <footer>
-        /footer>
+        </footer>
     </body>
 </html>

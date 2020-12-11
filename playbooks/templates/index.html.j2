@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="This website will show generate lab environments">
         <meta name="keywords" content="terminal, web, lab">
-        <title>AgnosticL</title>
+        <title>AgnosticLP</title>
         <style>
             * {
                 box-sizing: border-box;
@@ -22,8 +22,10 @@
                 padding: 15px;
             }
     
-                        .col-terminal {width: 100%;}
-                
+            {% for frame in frames %}
+            .col-{{ frame.name }} {width: {{ frame.width }};}
+            {% endfor %}
+    
             html {
                 font-family: "Lucida Sans", sans-serif;
             }
@@ -40,15 +42,17 @@
         <main>
         <hr/>
         <div class="row">
-                        <span class="col-terminal">
-                <iframe id="terminal"  src="https://cocalc.com/projects/49c56a59-c16b-416b-b960-f1a436f8075c/files/Welcome%20to%20CoCalc.term?session=default" width="100%" style="border:none;"></iframe>
+            {% for frame in frames %}
+            <span class="col-{{ frame.name }}">
+                <iframe id="{{ frame.name }}"  src="{{ frame.url }}" width="100%" style="border:none;"></iframe>
                 <script>
-                height = "100%".replace("%","")
+                height = "{{ frame.height }}".replace("%","")
                 height = screen.height / 100 * height;
-                document.getElementById("terminal").height= height;
+                document.getElementById("{{ frame.name }}").height= height;
                 </script>
             </span>
-                    </div>
+            {% endfor %}
+        </div>
         </main>
         <footer>
         </footer>
