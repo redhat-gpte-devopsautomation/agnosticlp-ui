@@ -5,5 +5,5 @@
   tasks:
     - name: Create a html template and populate it with variables from input
       template:
-        src: index.jinja2
+        src: index.html.j2
         dest: ../web_app/index.html

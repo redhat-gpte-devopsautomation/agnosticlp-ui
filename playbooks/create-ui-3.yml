@@ -1,9 +1,0 @@
-- hosts: localhost
-  connection: local
-  vars_files:
-    - ../input_samples/input_three_frame.yaml
-  tasks:
-    - name: Create a html template and populate it with variables from input
-      template:
-        src: index.jinja2
-        dest: ../web_app/index3.html
