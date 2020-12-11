@@ -5,10 +5,11 @@ This component will allow you to setup the frontend for your lab development.
 It consist in 1 playbook which will use jinjer template to generate static html based on your input definition.
 
 Folders:
+
 -input
 Contains a yml definition file for your html structure. It defines how many iframes, content(url) and its style.
 
-* File content structure:
+File content structure:
 List of frames. Each framew will have a name, title, height, width and a public/private url.
 
 -playbooks
