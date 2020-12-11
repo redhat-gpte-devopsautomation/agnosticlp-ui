@@ -26,7 +26,7 @@ All the playbook generated files in form of static html (index.html).
 
 *Pre-reqs:*
 
-* Ansible installed
+* Ansible: 2.9.10 installed
 
 *Installation:*
 
