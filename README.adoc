@@ -4,7 +4,7 @@
 This component will allow you to setup the frontend for your lab development.
 It consist in 1 playbook which will use jinjer template to generate static html based on your input definition.
 
-== Project structure:
+== Project structure: 
 
 * input
 Contains a yml definition file for your html structure. It defines how many iframes, content(url) and its style.
